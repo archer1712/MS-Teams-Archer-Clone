@@ -6,7 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = require("socket.io")(server,{
     cors:{
-        origin:process.env.PROD?"https://kinder-toonie-63752.herokuapp.com":"http://localhost:3000",
+        origin:process.env.PROD?"https://arcane-escarpment-21812.herokuapp.com":"http://localhost:3000",
         allowedHeaders:["Access-Control-Allow-Credentials"]
     },
     allowEIO3: true

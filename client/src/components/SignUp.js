@@ -30,6 +30,9 @@ function Copyright() {
 }
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    marginTop: '15vh'
+  },
   paper: {
     marginTop: theme.spacing(8),
     display: 'flex',
@@ -46,11 +49,49 @@ const useStyles = makeStyles((theme) => ({
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
+    '&:hover': {
+      backgroundColor: '#3e2723',
+    },
+    '&:active': {
+      backgroundColor: '#3e2723',
+    },
   },
   alertBox: {
     marginTop: theme.spacing(1),
     width: '100%',
-  }
+  },
+  text: {
+      "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
+        borderColor: '#3e2723'
+    },
+    "&:hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
+        borderColor: '#3e2723'
+    },
+    "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
+        borderColor: '#3e2723'
+    },
+    "& .MuiOutlinedInput-input": {
+        color: '#3e2723'
+    },
+    "&:hover .MuiOutlinedInput-input": {
+        color: '#3e2723'
+    },
+    "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-input": {
+        color: '#3e2723'
+    },
+    "& .MuiInputLabel-outlined": {
+        color: '#3e2723'
+    },
+    "&:hover .MuiInputLabel-outlined": {
+        color: '#3e2723'
+    },
+    "& .MuiInputLabel-outlined.Mui-focused": {
+        color: '#3e2723'
+    }
+},
+links: {
+  color: '#3e2723',
+}
 }));
 
 function SignUp() {
@@ -83,7 +124,7 @@ function SignUp() {
   }
 
   return (
-    <div>
+    <div className={classes.root}>
       <Header />
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -124,6 +165,7 @@ function SignUp() {
             autoComplete="email"
             inputRef={emailRef}
             autoFocus
+            className={classes.text}
           />
           <TextField
             variant="outlined"
@@ -136,6 +178,7 @@ function SignUp() {
             id="password"
             inputRef={passwordRef}
             autoComplete="current-password"
+            className={classes.text}
           />
           <TextField
             variant="outlined"
@@ -148,6 +191,7 @@ function SignUp() {
             id="password-confirm"
             inputRef={passwordConfirmRef}
             autoComplete="current-password"
+            className={classes.text}
           />
           <Button
             type="submit"
@@ -161,12 +205,12 @@ function SignUp() {
           </Button>
           <Grid container>
             <Grid item xs>
-              <Link href="/forgot-password" variant="body2">
+              <Link href="/forgot-password" variant="body2" className={classes.links}>
                 Forgot password?
               </Link>
             </Grid>
             <Grid item>
-              <Link href="/login" variant="body2">
+              <Link href="/login" variant="body2" className={classes.links}>
                 Already have an account?
               </Link>
             </Grid>

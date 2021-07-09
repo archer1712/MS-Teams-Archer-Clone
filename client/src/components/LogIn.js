@@ -32,6 +32,9 @@ function Copyright() {
 }
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    marginTop: '15vh'
+  },
   paper: {
     marginTop: theme.spacing(8),
     display: 'flex',
@@ -48,11 +51,49 @@ const useStyles = makeStyles((theme) => ({
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
-    backgroundColor: theme.palette.primary.main
+    backgroundColor: theme.palette.primary.main,
+    '&:hover': {
+      backgroundColor: '#3e2723',
+    },
+    '&:active': {
+      backgroundColor: '#3e2723',
+    },
   },
   alertBox: {
     marginTop: theme.spacing(1),
     width: '100%',
+  },
+  text: {
+      "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
+        borderColor: '#3e2723'
+    },
+    "&:hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
+        borderColor: '#3e2723'
+    },
+    "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
+        borderColor: '#3e2723'
+    },
+    "& .MuiOutlinedInput-input": {
+        color: '#3e2723'
+    },
+    "&:hover .MuiOutlinedInput-input": {
+        color: '#3e2723'
+    },
+    "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-input": {
+        color: '#3e2723'
+    },
+    "& .MuiInputLabel-outlined": {
+        color: '#3e2723'
+    },
+    "&:hover .MuiInputLabel-outlined": {
+        color: '#3e2723'
+    },
+    "& .MuiInputLabel-outlined.Mui-focused": {
+        color: '#3e2723'
+    }
+  },
+  links: {
+    color: '#3e2723',
   }
 }));
 
@@ -82,7 +123,7 @@ function LogIn() {
   }
 
   return (
-    <div>
+    <div className={classes.root}>
       <Header />
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -122,6 +163,7 @@ function LogIn() {
             name="email"
             autoComplete="email"
             inputRef={emailRef}
+            className={classes.text}
             autoFocus
           />
           <TextField
@@ -134,6 +176,7 @@ function LogIn() {
             type="password"
             id="password"
             inputRef={passwordRef}
+            className={classes.text}
             autoComplete="current-password"
           />
           <Button
@@ -148,12 +191,12 @@ function LogIn() {
           </Button>
           <Grid container>
             <Grid item xs>
-              <Link href="/forgot-password" variant="body2">
+              <Link href="/forgot-password" variant="body2" color="primary" className={classes.links}>
                 Forgot password?
               </Link>
             </Grid>
             <Grid item>
-              <Link href="/signup" variant="body2">
+              <Link href="/signup" variant="body2" color="primary" className={classes.links}>
                 Need an Account? 
               </Link>
             </Grid>

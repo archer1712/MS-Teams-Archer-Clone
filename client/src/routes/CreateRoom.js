@@ -40,6 +40,28 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         textAlign: 'center',
         paddingBottom: '25px'
+    },
+    roomChange: {
+        "& .Mui-focused": {
+            color: '#3e2723', 
+        },
+        '& label.Mui-focused': {
+            color: '#3e2723',
+          },
+          '& .MuiInput-underline:after': {
+            borderBottomColor: '#3e2723',
+          },
+          '& .MuiOutlinedInput-root': {
+            '& fieldset': {
+              borderColor: '#3e2723',
+            },
+            '&:hover fieldset': {
+              borderColor: '#3e2723',
+            },
+            '&.Mui-focused fieldset': {
+              borderColor: '#3e2723',
+            },
+        }
     }
   }));
 
@@ -123,7 +145,7 @@ const CreateRoom = (props) => {
         <div className={classes.giveBackground}>
             <div className={classes.root}>
             <Typography variant="h3" className={classes.headings}>Hii {currentUser.displayName}! Welcome to MS Teams Archer Clone</Typography>
-            <Typography variant="h5" className={classes.headings}>Press the button below to get started on an instant video call.</Typography>
+            <Typography variant="h5" className={classes.headings}>Press the button below to get started!</Typography>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
                     <Button variant="contained" ref={anchorRef} aria-controls={open ? 'menu-list-grow' : undefined} 
                     aria-haspopup="true" onClick={handleToggle} style={{color: 'white', background: '#4caf50', display: 'flex'}}>
@@ -140,7 +162,7 @@ const CreateRoom = (props) => {
                             <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
                                 <MenuItem onClick={create}>Create a New Room</MenuItem>
                                 <MenuItem onClick={handleDialogueOpen}>Join a room</MenuItem>
-                                <Dialog open={dialogueOpen} onClose={handleDialogueClose} aria-labelledby="form-dialog-title">
+                                <Dialog open={dialogueOpen} onClose={handleDialogueClose} aria-labelledby="form-dialog-title" className={classes.roomChange}>
                                     <DialogTitle id="form-dialog-title">Join a Video Call</DialogTitle>
                                     <DialogContent>
                                     <DialogContentText>
@@ -152,15 +174,15 @@ const CreateRoom = (props) => {
                                         id="name"
                                         label="MSAC Room Code"
                                         onChange={handleRoomChange}
-                                        // type="email"
+                                        className={classes.roomChange}
                                         fullWidth
                                     />
                                     </DialogContent>
                                     <DialogActions>
-                                    <Button onClick={handleDialogueClose} color="primary">
+                                    <Button onClick={handleDialogueClose}>
                                         Cancel
                                     </Button>
-                                    <Button onClick={handleJoinRoom} color="primary">
+                                    <Button onClick={handleJoinRoom}>
                                         Join Room
                                     </Button>
                                     </DialogActions>
