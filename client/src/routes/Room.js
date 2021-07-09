@@ -389,22 +389,22 @@ const Room = (props) => {
             <ButtonGroup color='white' aria-label="outlined primary button group">
                 {!audioShare && <Tooltip title="Turn on your audio">
                 <span>
-                <Button className={classes.mediaButton} onClick={() => {toggleAudioShare(!audioShare)}}>{<MicIcon className={classes.mediaIcon} />}</Button>
+                <Button className={classes.mediaButton} onClick={() => {toggleAudioShare(!audioShare)}}>{<MicOffIcon className={classes.mediaIcon} />}</Button>
                 </span>
                 </Tooltip>}
                 {audioShare && <Tooltip title="Turn off your audio">
                 <span>
-                {<Button className={classes.mediaButton} onClick={() => {toggleAudioShare(!audioShare)}}>{<MicOffIcon className={classes.mediaIcon} />}</Button>}
+                {<Button className={classes.mediaButton} onClick={() => {toggleAudioShare(!audioShare)}}>{<MicIcon className={classes.mediaIcon} />}</Button>}
                 </span>
                 </Tooltip>}
                 {!videoShare && <Tooltip title="Turn on your video">
                 <span>
-                {!videoShare && <Button className={classes.mediaButton} onClick={() => {toggleVideoShare(!videoShare)}}>{<VideocamIcon className={classes.mediaIcon} />}</Button>}
+                {!videoShare && <Button className={classes.mediaButton} onClick={() => {toggleVideoShare(!videoShare)}}>{<VideocamOffIcon className={classes.mediaIcon} />}</Button>}
                 </span>
                 </Tooltip>}
                 {videoShare && <Tooltip title="Turn off your video">
                 <span>
-                {videoShare && <Button className={classes.mediaButton} onClick={() => {toggleVideoShare(!videoShare)}}>{<VideocamOffIcon className={classes.mediaIcon} />}</Button>}
+                {videoShare && <Button className={classes.mediaButton} onClick={() => {toggleVideoShare(!videoShare)}}>{<VideocamIcon className={classes.mediaIcon} />}</Button>}
                 </span>
                 </Tooltip>}
                 {!screenShare && <Tooltip title="Share screen">
