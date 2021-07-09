@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
 function Invite(props) {
     const classes = useStyles();
     const link = `/room/${props.roomID}`;
-    const fullLink = `http://localhost:3000${link}`;
+    const fullLink = `https://arcane-escarpment-21812.herokuapp.com${link}`;
     const { currentUser } = useAuth();
     const userName = currentUser? currentUser.displayName : '';
     const friendsMail = useRef();

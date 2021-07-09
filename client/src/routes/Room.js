@@ -140,7 +140,7 @@ const Room = (props) => {
         "transports" : ["websocket"]
     };
     useEffect(() => {
-        socketRef.current = io.connect('https://arcane-escarpment-21812.herokuapp.com/',{
+        socketRef.current = io.connect('https://arcane-escarpment-21812.herokuapp.com',{
             withCredentials: false
         });
         navigator.mediaDevices.getUserMedia({ video: videoConstraints, audio: true }).then(stream => {

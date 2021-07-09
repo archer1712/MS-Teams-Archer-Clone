@@ -47,7 +47,7 @@ function Info(props) {
     const [openBar, setOpenBar] = React.useState(false);
 
     const handleCopyLink = () => {
-        const fullLink = `http://localhost:3000${link}`;
+        const fullLink = `https://arcane-escarpment-21812.herokuapp.com${link}`;
         navigator.clipboard.writeText(fullLink);
         setOpenBar(true);
     }
