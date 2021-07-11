@@ -206,7 +206,7 @@ call page and the security settings on the URL Bar shows *Not Secure*, try to cl
 other tabs and then enter the room.
 
 Hope you enjoy using the application. 
-For any queries, feel free to reach me out [here](mailto: jahnavi.karuna@gmail.com).
+For any queries, feel free to reach me out [here](mailto:jahnavi.karuna@gmail.com).
 
 Cheers 🍻
 
