@@ -199,3 +199,15 @@ For instance, if the link of the room is `https://arcane-escarpment-21812.heroku
 then the MSAC Room Code will be `d96e9a60-e21f-11eb-a5bf-b1df2269175d`
 
 
+## Troubleshooting
+
+**Not able to enter the video call** : If you are unable to enter the video
+call page and the security settings on the URL Bar shows *Not Secure*, try to close all the 
+other tabs and then enter the room.
+
+Hope you enjoy using the application. 
+For any queries, feel free to reach me out [here](jahnavi.karuna@gmail.com).
+
+Cheers 🍻
+
+
