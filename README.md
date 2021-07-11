@@ -180,4 +180,22 @@ might see some buttons.
 
 **Log Out:** For loggint out click on the logout button on the top right corner of the screen.
 
+## FAQ
+
+#### How many of my friends can join?
+
+A total of 4 people including you can join the call.
+
+#### How to invite my friends or team on the call?
+
+- You can copy the link to the call and send invite
+- You can copy the link using the Info button
+- You can put in the Mail ids and send invite directly using the invite button
+
+#### How to get the MSAC room code for the call?
+
+It is the part of the link after the `room/` or `chatview/` in the URL of the call.
+For instance, if the link of the room is `https://arcane-escarpment-21812.herokuapp.com/chatview/d96e9a60-e21f-11eb-a5bf-b1df2269175d`
+then the MSAC Room Code will be `d96e9a60-e21f-11eb-a5bf-b1df2269175d`
+
 
