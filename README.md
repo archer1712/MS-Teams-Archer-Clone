@@ -99,3 +99,8 @@ at Line 143 in `client\src\routes\Room.js`. Then run the following commands!
 That's it. Go to `http://localhost:3000/` to begin right away!
 
 ## Demo
+
+As you open the link to the app or run it locally, you'll come
+across a front page. To begin, click on the *create an account
+right away* button. 
+![image](Images/CreateAccountSS.png)
