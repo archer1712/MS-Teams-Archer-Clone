@@ -123,7 +123,8 @@ your password.
 
 If you don't remember the password, click on the *Forgot Password*
 link and you will be redirected to that page. Type in the email id
-with which you created an account. 
+with which you created an account.
+
 
 ![image](Images/ForgotPassword.png)
 
@@ -133,13 +134,9 @@ with an option to change your password. Now go back to *Already
 have an account* and fill in your new password and you'll be logged
 in!
 
-![image](Images/FPMail.png)
-
 After logging in, you reach the dashboard.
-To create a new room click on the **Create Account** button and
+To create a new room click on the **Create A Room** button and
 you'll be redirected to the new room.
-
-![image](Images/CreateRoomJoinRoomSS.png)
 
 To invite over other friends in this room, send them the room code.
 You can get the MSAC room code from the url bar itself. It is 
@@ -171,39 +168,16 @@ with yours on the screen. Make sure that more than four people
 dont join because the room will be filled. On the bottom, you
 might see some buttons.
 
-You can stop sharing your audio or video and start sharing them 
-again as you like using these buttons.
+**Audo/Video Toggle:** You can stop sharing your audio or video and start sharing them again as you like using these buttons.
 
-![image](Images/AudioVideo.png)
+**Share Screen:** For sharing your screen click on the button as shown below and then select the tab and press on share. For stop sharing you can click on the same button again.
 
-For sharing your screen click on the button as shown below and
-then select the tab and press on share. For stop sharing you can click
-on the same button again.
+**Get Call Link:** If you haven't invited your friends yet click on the Info button and then the *copy* button to copy the link to the call on your clipboard. Now you can send it to your friends and ask them to simply login the app and go to the link and they'll be joining your call soon.
 
-![image](Images/ShareScreen.png)
-![image](Images/SelectTab.png)
+**Mail Invite:** For sending invites directly, go to the *Invite* button, type in the mail id to whom you wanna send the invite and click on *Send Invite* and the person will receive the link to the call.
 
-If you haven't invited your friends yet click on the Info button
-and then the *copy* button to copy the link to the call on your
-clipboard. Now you can send it to your friends and ask them to simply
-login the app and go to the link and they'll be joining your call soon.
+**End Call:** For ending the call, click on the end call button. You'll be  redirected to the chat. 
 
-![image](Images/Info.png)
-![image](Images/Copy.png)
+**Log Out:** For loggint out click on the logout button on the top right corner of the screen.
 
-For sending invites directly, go to the *Invite* button, type in
-the mail id to whom you wanna send the invite and click on **Send
-Invite** and the person will receive the link to the call.
-
-![image](Images/Invite.png)
-![image](Images/SendInvite.png)
-
-For ending the call, click on the end call button. You'll be 
-redirected to the chat. 
-
-![image](Images/EndCall.png)
-
-For loggint out click on the logout button.
-
-![image](Images/Logout.png)
 
