@@ -91,10 +91,7 @@ After installing node, this project will need yarn too, so just run the followin
 
 **4. Run!**
 
-To make the production variable false, remove `PROD=true`
-in _start_ under _scripts_ in `package.json`. Also, replace
-`'https://arcane-escarpment-21812.herokuapp.com'` with `'/'`
-at Line 143 in `client\src\routes\Room.js`. Then run the following commands!
+Finally, Run the following commands!
 
     $ yarn start
     $ cd client
