@@ -18,7 +18,7 @@
     "webrtc": "^1.14.1"
   },
   "scripts": {
-    "start": "PROD=true node server.js",
+    "start": "node server.js",
     "postinstall": "cd ./client && yarn"
   },
   "devDependencies": {

@@ -140,12 +140,9 @@ const Room = (props) => {
 
   //Handles and fires socket events
   useEffect(() => {
-    socketRef.current = io.connect(
-      "https://arcane-escarpment-21812.herokuapp.com",
-      {
-        withCredentials: false,
-      }
-    );
+    socketRef.current = io.connect("http://localhost:8000/", {
+      withCredentials: false,
+    });
     navigator.mediaDevices
       .getUserMedia({ video: videoConstraints, audio: true })
       .then((stream) => {
@@ -203,7 +200,6 @@ const Room = (props) => {
         myPeer.current = peersRef[0];
 
         socketRef.current.on("user left", (id) => {
-          // console.log("user left client side")
           const peerLeaving = peersRef.current.find((p) => p.peerID === id);
           if (peerLeaving) {
             peerLeaving.peer.destroy();

@@ -5,15 +5,19 @@ const express = require("express");
 const http = require("http");
 const app = express();
 const server = http.createServer(app);
+const socket = require("socket.io");
 const io = require("socket.io")(server, {
   cors: {
-    origin: process.env.PROD
-      ? "https://arcane-escarpment-21812.herokuapp.com"
-      : "http://localhost:3000",
+    origin:
+      //         process.env.PROD
+      //       ? "https://arcane-escarpment-21812.herokuapp.com"
+      //       :
+      "http://localhost:3000",
     allowedHeaders: ["Access-Control-Allow-Credentials"],
   },
   allowEIO3: true,
 });
+// const io = socket(server);
 const path = require("path");
 
 const users = {};
@@ -61,10 +65,10 @@ io.on("connection", (socket) => {
   });
 });
 
-app.use(express.static(path.join(__dirname, "./client/build")));
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+// app.use(express.static(path.join(__dirname, "./client/build")));
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
 
-const port = process.env.PORT || 7000;
+const port = 8000;
 server.listen(port, () => console.log(`server is running on port ${port}`));
