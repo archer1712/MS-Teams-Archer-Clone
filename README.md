@@ -1,5 +1,8 @@
 # MS Teams - Archer Clone
 
+**Link to Hosted App:**https://arcane-escarpment-21812.herokuapp.com/
+**Link to Demo Video:**https://youtu.be/KGYTuPF0q70
+
 This is a Fully Functional Real Time Video Calling Web
 Application with Chat Application and User Authentication that I
 created using the SCRUM framework of Agile Software Development.
